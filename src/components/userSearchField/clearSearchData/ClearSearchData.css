@@ -1,0 +1,19 @@
+.search_icon_text_main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: center;
+    padding-bottom: 16px;
+    content: '';
+}
+
+.search_clear_text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  content: '';
+  display: contents;
+  cursor: pointer;
+}

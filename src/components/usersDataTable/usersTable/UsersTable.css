@@ -1,0 +1,64 @@
+.data_table {
+  border-collapse: collapse;
+  position: relative;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 7px;
+  padding-left: 16px;
+  color: #9EAAB4;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+}
+td {
+  height: 50px;
+}
+.table_data_header {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  width: 100%;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+.table_data_username_tittle {
+  padding-left: 16px;
+}
+.table_data_header>td {
+    /* background-color: #0cb4f1; */
+    flex: 1;
+  }
+.table_username {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  padding-left: 16px;
+  color: #0cb4f1;
+  width: 25%;
+}
+.data_table_body {
+  border-top: 1px solid #F7F7F7;
+  min-width: fit-content;
+  width: 100%;
+}
+.delete_table_row {
+  cursor: pointer;
+  width: 25%;
+  padding-right: 35px;
+}
+.email_table_row {
+  width: 30%;
+}
+
+.registracion_date_row {
+  width: 30%
+}
+.rate_row {
+   width: 20%
+}

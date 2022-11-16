@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { useMemo, useState } from "react";
+import "./App.css";
+import AppTittle from "./components/appTittle/AppTittle";
+import { UsersDataTable } from "./components/usersDataTable/UsersDataTable";
+import UserSearchField from "./components/userSearchField/UserSearchField";
 
 function App() {
+  const [searchValue, setSearchValue] = useState("");
+  const [resetData, setResetData] = useState(false);
+
+  const searchProps = useMemo(() => {
+    return {
+      resetData,
+      setResetData,
+      searchValue,
+      setSearchValue,
+    };
+  }, [resetData, setResetData, searchValue, setSearchValue]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AppTittle />
+      <UserSearchField searchProps={searchProps} />
+      <UsersDataTable searchProps={searchProps} />
     </div>
   );
 }
